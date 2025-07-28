@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Oi</h1>
+    <p>Olha essa imagem</p>
+    <picture><!--Tag picture permite a criação de várias fontes no caso sources, fazer isso pode aumentar a visibilidade do seu site, e diminuir o bounce rage. -->
+        <source media="(max-width:750px )" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1000px )" srcset="imagens/médio.png" type="image/png">
+        <img src="imagens/grande.png" alt="big png" > <!---Colocar sempre em ordem crescente.-->>
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <h2>Vamos aprender a reproduzir o audio</h2>
+    <audio src="imagens/Champion - Telecasted.mp3" controls autoplay></audio> <!--Essa função adiciona um audio. O controls adiocana uma função para acionar o audio, o autoplay simplismente toca o audio.-->>
+    <audio><!--Os tipos de audios são esses abaixo, dos quais wav é o mais pesado, caso nao carregue não poderá ser reproduzido. A tag para audio é a tag "Audio" com os parametros:"Source:Src"-->
+        <source src="imagens/Champion - Telecasted.ogg" type="audio/ogg">
+        <source src="imagens/Champion - Telecasted.wav" type="audio/wav">
+        <source src="imagens/Champion - Telecasted.mp3" type="audio/peg">
+        
+    </audio>
+    <script>
+        window.prompt("Qual seu nome?")
+    </script>
+</body>
+</html>
